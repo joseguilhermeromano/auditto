@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    font-family:courier,arial,helvetica;
+  }
+  #header {
+    background-color: lightblue;
+    text-align: center;
+    padding: 2px;
+    font-size: 25px;
+    color: white;
+  }
+  nav {
+    float: left;
+    width: 30%;
+    min-height: 100%;
+    background: #fff;
+    padding: 20px;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    min-height: 100%; 
+  }
+  #footer {
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #tabela td{
+    border: 1px solid black;
+  }
+
+  #tabela thead{
+    background-color: aqua;
+  }
