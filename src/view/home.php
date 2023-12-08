@@ -105,7 +105,7 @@
 
         <br><br>
 
-        <h3>Questão 04</h3><hr>
+        <h3>Questão 05</h3><hr>
         <p>Uma empresa decide dar um reajuste a seus funcionários de acordo com os seguintes critérios:</p>
         <p>1- 50% para aqueles que ganham menos de R$ 3.000,00;</p>
         <p>2- 20% para aqueles que ganham entre R$ 3.000,01 e R$ 10.000 e;</p>
