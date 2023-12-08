@@ -47,6 +47,59 @@
 
         <div id="tabela"></div>
 
+        <h3>Questão 04</h3>
+        <p>Visualizando o código abaixo, crie uma função em javascript </p>
+        <p>que guarde o título e a descrição em um array usando jquery:</p>
+
+        <img src="assets/img/codigo.png">
+
+        <br><br>
+
+        <h2>Código utilizado na minha solução:</h2>
+
+        <div class="et_pb_blurb_container">
+            <div class="et_pb_blurb_description">
+                <h1>Auditoria</h1>
+                <p><span>Dashboards  que mostram a auditoria completa</span><p>
+            </div>
+        </div>
+
+        <div class="et_pb_blurb_container">
+            <div class="et_pb_blurb_description">
+                <h1>Fiscalização</h1>
+                <p><span>Dashboards  que mostram a fiscalização completa</span><p>
+            </div>
+        </div>
+
+        <div class="et_pb_blurb_container">
+            <div class="et_pb_blurb_description">
+                <h1>Processo</h1>
+                <p><span>Dashboards  que mostram o processo completo</span><p>
+            </div>
+        </div>
+
+        <div class="et_pb_blurb_container">
+            <div class="et_pb_blurb_description">
+                <h1>Operação</h1>
+                <p><span>Dashboards  que mostram a operação completa</span><p>
+            </div>
+        </div>
+
+        <div class="et_pb_blurb_container">
+            <div class="et_pb_blurb_description">
+                <h1>Financeira</h1>
+                <p><span>Dashboards  que mostram a área financeira completa</span><p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <button id="buttonArray">Clique aqui para ver o resultado</button>
+
+        <br><br>
+
+        <div id="resultado"></div>
+
     </article>
 </section>
 <footer id="footer">

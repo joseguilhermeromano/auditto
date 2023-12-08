@@ -39,4 +39,16 @@ $(document).ready(function () {
       });
   
     });
+
+    $('#buttonArray').click(function(){
+      let array = [];
+      $('.et_pb_blurb_container > .et_pb_blurb_description').each(function() {
+        let titulo = $(this).children('h1').text();
+        let descricao = $(this).children('p').text();
+        array.push({titulo: titulo, descricao: descricao});
+      });
+
+      $('#resultado').html('<h4>Resultado:</h4>'+
+          (array.map((elem) => { return `<br/>Título: ${elem.titulo}, Descrição: ${elem.descricao}`})).concat());
+    });
 });

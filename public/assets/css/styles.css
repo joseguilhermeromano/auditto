@@ -11,7 +11,7 @@
   }
   nav {
     float: left;
-    width: 30%;
+    width: 10%;
     min-height: 100%;
     background: #fff;
     padding: 20px;
@@ -23,7 +23,7 @@
   article {
     float: left;
     padding: 20px;
-    width: 70%;
+    width: 90%;
     background-color: #f1f1f1;
     min-height: 100%; 
   }
