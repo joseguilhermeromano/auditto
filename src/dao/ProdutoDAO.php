@@ -4,13 +4,27 @@ require_once(__DIR__."/../model/Produto.php");
 
 class ProdutoDAO{
 
+    private $dbDriver;
+    private $dbName;
+    private $dbHost;
+    private $dbUser;
+    private $dbPass;
+
+
     public function __construct(){
+        $env = parse_ini_file(__DIR__."/../../.env");
+        $this->dbDriver = $env['DB_DRIVER'];
+        $this->dbName = $env['DB_NAME'];
+        $this->dbHost = $env['DB_HOST'];
+        $this->dbUser = $env['DB_USER'];
+        $this->dbPass = $env['DB_PASS'];
     }
 
     public function consultar($dataInicio, $dataFinal, $prodExceto)
     {
-        $conexao = new PDO("mysql:dbname=auditto; host=db"
-                            , "root", "secret");
+        $conexao = new PDO("{$this->dbDriver}:dbname={$this->dbName}; host={$this->dbHost}"
+                            , $this->dbUser, $this->dbPass);
+
         $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         $sql = "SELECT * FROM Produtos 
