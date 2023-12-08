@@ -6,4 +6,5 @@ $routers = [
     ,"/teste/cliente.php" =>"ClientController@index"
     ,"/teste/curl.php" => "CurlController@index"
     ,"/teste/query.php" => "QueryController@index"
+    ,"/teste/ajuste.php" => "AdjustmentController@index"
 ];

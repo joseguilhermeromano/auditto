@@ -3,11 +3,13 @@
 class AdjustmentController{
     public function index(){
 
-        if(!isset($_POST['salario'])) return 'O Salário não foi informado.';
+        header('Content-Type: text/html');
 
-        if(!is_float($_POST['salario'])) return 'O formato do valor do salário é inválido.';
+        if(!isset($_POST['salario'])) echo 'O Salário não foi informado.';
 
-        $salario = $_POST['salario'];
+        $salario = str_replace(".", "", $_POST['salario']);
+
+        $salario = floatval(str_replace(",", ".", $salario));
 
         switch($salario){
             case $salario < 3000:
@@ -20,6 +22,9 @@ class AdjustmentController{
                 $salario += ($salario/100)*15;
         }
 
-        return "O resultado é ".$salario;
+        $salario = round($salario, 2);
+
+
+        echo json_encode("O Reajuste do Salário ficará R$ ".$salario);
     }
 }

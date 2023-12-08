@@ -51,4 +51,22 @@ $(document).ready(function () {
       $('#resultado').html('<h4>Resultado:</h4>'+
           (array.map((elem) => { return `<br/>Título: ${elem.titulo}, Descrição: ${elem.descricao}`})).concat());
     });
+
+    $("#formularioSalario").submit(function (event) {
+      let formData = {
+       salario: $("#money-field1").val(),
+      };
+  
+      $.ajax({
+        type: "POST",
+        url: "teste/ajuste.php",
+        data: formData,
+        dataType: "json",
+        encode: true,
+      }).done(function (data) {
+        alert(data);
+      });
+  
+      event.preventDefault();
+    });
 });
